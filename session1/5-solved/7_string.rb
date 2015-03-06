@@ -5,5 +5,17 @@
 # pirates_say_arrrrrrrrr("Pirates say arrrrrrrrr")        # => "arrrrrrrr"
 
 def pirates_say_arrrrrrrrr(string)
-
+  rray = ""
+  next_letter = false
+  
+  string.size.times do |i|
+    letter = string[i]
+    
+    rray << letter if next_letter
+    next_letter = (letter == "r" || letter == "R")
+  end
+  rray
+    
 end
+
+
