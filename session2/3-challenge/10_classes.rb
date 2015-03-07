@@ -15,6 +15,9 @@
 # josh.age      # => 30
 #
 
-class Person
+class Person(name, age)
+  Person.name = name
+  Person.age = age
+  Person.birthday = age
 
 end
